@@ -13,8 +13,8 @@ This project implements a microservices-based **ELT (Extract, Load, Transform)**
 
 
 ### Project Structure
-
-my_project/
+```bash
+dalberg-ingestflow/
 ├── api_gateway/                    # The API gateway for the microservices(Entry point)
 │   ├── __init__.py
 │   └── routes.py                   # API routes for interacting with services
@@ -56,11 +56,14 @@ my_project/
      +----------------+     +-----------------+     |
      | External Source |     | PostgreSQL (Raw)|     |
      +----------------+     +-----------------+     |
-                                                +-------------+
-                                                | Transformed |
-                                                |  Data (DB)  |
-                                                +-------------+
-
+                                    |            +-------------+
+                                    |            | Transformed |
+                                    |            |  Data (DB)  |
+                                    |            +-------------+
+                                    |                   
+                            +------------------+        
+                            |  Raw data Source |        
+                            +------------------+        
 
 
 
