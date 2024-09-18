@@ -111,32 +111,12 @@ API_KEY=your-api-key
 
 python main.py
 
-The API Gateway will be accessible at http://127.0.0.1:8000/.
+The API Gateway will be accessible at http://127.0.0.1:8001/.
 
-
-
-API Endpoints
-
-The following API endpoints are exposed via the API Gateway:
-1. GET /ingest
-
-    Description: Triggers the ingestion process to extract raw data from the external API.
-    Response: Raw data extracted from the API.
-
-2. POST /load
-
-    Description: Loads the extracted data into the database (PostgreSQL).
-    Response: Status of the loading process.
-
-3. GET /transform
-
-    Description: Transforms the raw data that has been loaded into the database and returns transformed data.
-    Response: Transformed data.
-
-4. Interactive API Documentation
+### **5. API Endpoint Documentation **
 
 FastAPI API documentation can be accessed at:
 
-    Swagger UI: http://127.0.0.1:8000/docs
-    ReDoc: http://127.0.0.1:8000/redoc
+    Swagger UI: http://127.0.0.1:8001/docs
+    ReDoc: http://127.0.0.1:8001/redoc
 
