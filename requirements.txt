@@ -5,3 +5,5 @@ sqlalchemy
 asyncpg
 requests
 python-dotenv
+plotly
+python-multipart
