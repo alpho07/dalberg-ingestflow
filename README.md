@@ -79,8 +79,8 @@ Make sure you have the following installed:
 ## Setup and Installation
 
 ### 1. Clone the repository
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+git clone https://github.com/alpho07/dalberg-ingestflow.git
+cd dalberg-ingestflow
 
 
 python3 -m venv venv
@@ -103,6 +103,9 @@ requests==2.26.0
 python-dotenv==0.19.0
 
 ### **3. Setup .env variables**
+DATABASE_URL=postgresql+asyncpg://<username>:<password>@<host>:<port>/<database>
+API_URL=https://api.example.com/api/v1           # External API endpoint for ingestion
+API_KEY=your-api-key   
 
 ### **4. Run the application**
 
